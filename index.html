@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">,
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="devani.png">
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div>
+        <header class="header">
+            <img class="logo" src="1.png" alt="My Image">
+            <nav class="navbar">
+               <a href="#aboutme" >ABOUT ME</a>
+               <a href="#myskills">MY SKILLS</a>
+               <a href="#myCV">MY RESUME</a>
+               <a href="#contactme">CONTACT</a>
+            
+            </nav>
+         </header>
+     </div>   
+    <div class="maincontent">
+          <aside>
+            <img class="mephoto"src="me.jpg">
+          </aside>
+          <section class="section1">
+            <h4>Hello, my name is</h4><br>
+            <h1>Krupali Devani</h1>
+            <h3>Front-end Developer</h3><br>
+            <h4>I code within required coding standers and styles to serve the exact need.</h4><br>
+            <div >
+               <a class="resume" href="#contactme">contact me</a>
+          </section>
+    </div>
+   <div class="aboutme" id="aboutme">
+    <section class="about-containt">
+        <h1>About Me</h1><br>
+        <p style="line-height: 1.5em;">   Hello I'm Krupali, a dedicated and enthusiatic front-end developer with solid grounding in HTML,CSS, Javascript.
+            I am currently pursuing my BE from Silver oak collage of Engineering.</p>
+            <p style="line-height: 1.5em;" >
+               My goal to continue learning and growing as a developer. and I am eager to contribute to innovative project in colloborative team envirinment.         
+        </p><br><br>
+        <div>
+          <a class="resume" href="resume (3).pdf" id="myCV" >my resume</a>
+       </div>
+    </section>
+   </div>
+   <div class="maincontent">
+
+   
+    <div class="skills" id="myskills">
+      <h1 class="heading-text">My Skills</h1>
+      
+        <div class="skill">
+          <b>HTML</b>
+          <span>95%</span>
+          <div>
+            <span style="width:95%"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <b>CSS</b>
+          <span>91%</span>
+          <div>
+            <span style="width:91%"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <b>JavaScript</b>
+          <span>85%</span>
+          <div>
+            <span style="width:85%"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <b>React js</b>
+          <span>79%</span>
+          <div>
+            <span style="width:79%"></span>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+
+
+
+<dic class="maincontent">
+<div class="main-section contact bg-lightgrey" id="contactme">  
+    <div class="container">
+      <h2 class="heading-text">Get In Touch</h2><br>
+      <div class="width-100">
+        <form id="myForm" mrthod="post">
+          <input type="text" name="full_name" placeholder="Full Name..."/>
+          <input type="text" name="email" placeholder="Full Email Id..."/>
+          <input type="text" name="mobileno" placeholder="Full Mobile No..."/>
+          <textarea name="address" placeholder="Enter Address..."></textarea>
+          <button  type="button" onclick="SubForm()">Submit</button>
+        </form>
+        <script>
+          function SubForm() {
+              $.ajax({
+                  url: "https://api.apispreadsheets.com/data/KADDxxQUZjYsypVw/",
+                  type: "post",
+                  data: $("#myForm").serializeArray(),
+                  success: function() {
+                      alert("Form Data Submitted :)");
+                  },
+                  error: function() {
+                      alert("There was an error :(");
+                  }
+              });
+          }
+      </script>
+      </div>
+    
+    </div>
+  </div>
+ </div></dic></div>
+<div class="contactus"> 
+      <div class="width-33">
+        <h3>
+          <i class="fa fa-map-marker"></i>
+        </h3>
+        <h4>Address</h4>
+        <p>3,Mohanpark so.,Jivanvadi,Nikol,Ahemdabad-382350.</p>
+      </div>
+      <div class="width-33">
+        <h3>
+          <i class="fa fa-phone"></i>
+        </h3>
+        <h4>Phone</h4>
+        <p>+91 9924941855</p>
+      </div>
+      <div class="width-33">
+        <h3>
+          <i class="fa fa-envelope-o"></i>
+        </h3>
+        <h4>Email</h4>
+        <p>krupalidevani@gmail.com</p>
+      </div>
+</div>
+
+
+
+   <footer>
+    <p>Copyright © 2023 krupali devani — All Rights Reserved</p>
+</footer>
+</body>
